@@ -10,47 +10,47 @@ The project aims at providing innovative solution for the investors to find pote
  4. Selenium for Web Scrapping 
 
 ## Build Instructions
-
- ### 1. Run Selenium Server on a seprate terminal :
  
- ```
- DISPLAY=:1 xvfb-run java -jar ~/selenium/selenium-server-standalone-3.141.59.jar
- ```
- 
- ### 2. Clone the repository locally :
+ ### 1. Clone the repository locally :
  
  ```
  git clone https://github.com/kanishkshah/KJSCE_Hack.git
  ```
  
- ### 3. Setup a virtual environment :
+ ### 2. Setup a virtual environment :
  
  ```
  python3 -m venev myenv
  ```
  
- ### 4. Activate source :
+ ### 3. Activate source :
  
  ```
  source myvenv/bin/activate
  ```
  
- ### 5. Install all the requirements 
+ ### 4. Install all the requirements 
  
  ```
  pip install -r requirements.txt
  ```
  
- ### 6. Make migrations :
+ ### 5. Make migrations :
  
  ``` 
  python manage.py makemigrations
  ```
  
- ### 7. Run migrations : 
+ ### 6. Run migrations : 
  
  ```
  python manage.py migrate
+ 
+ ```
+  ### 7. Run Selenium Server on a seperate terminal :
+ 
+ ```
+ DISPLAY=:1 xvfb-run java -jar ~/selenium/selenium-server-standalone-3.141.59.jar
  ```
  
  ### 8. Run the server locally :
